@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>A letter to Joanne &amp; Marie - From Kelly &amp; Alicia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #F4EDE0;
+    --cream-soft: #FAF6EE;
+    --rose-gold: #B07B5C;
+    --rose-gold-soft: #D4A78A;
+    --navy: #1F2D3D;
+    --charcoal: #2C2C2C;
+    --muted: #6B6B6B;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--cream);
+    color: var(--charcoal);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.85;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 96px 56px 120px;
+    background: var(--cream-soft);
+    box-shadow: 0 0 60px rgba(31,45,61,0.04);
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+  .header .eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--rose-gold);
+    margin-bottom: 24px;
+  }
+  .header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 42px;
+    color: var(--navy);
+    margin: 0 0 16px;
+    line-height: 1.2;
+    letter-spacing: -0.005em;
+  }
+  .header h1 em {
+    font-style: italic;
+    color: var(--rose-gold);
+  }
+  .header .subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 19px;
+    color: var(--muted);
+    margin: 0;
+  }
+  .divider {
+    width: 48px;
+    height: 1px;
+    background: var(--rose-gold-soft);
+    margin: 48px auto;
+    border: 0;
+  }
+  .salutation {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    color: var(--navy);
+    margin: 0 0 32px;
+  }
+  p { margin: 0 0 24px; }
+  em { color: var(--navy); font-style: italic; }
+  h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: var(--navy);
+    margin: 56px 0 24px;
+    line-height: 1.3;
+  }
+  h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--rose-gold);
+    margin: 32px 0 12px;
+  }
+  ul { padding-left: 22px; margin: 0 0 24px; }
+  li { margin-bottom: 10px; }
+  li::marker { color: var(--rose-gold); }
+  .pullquote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 1.45;
+    color: var(--navy);
+    text-align: center;
+    padding: 36px 24px;
+    margin: 40px 0;
+    border-top: 1px solid var(--rose-gold-soft);
+    border-bottom: 1px solid var(--rose-gold-soft);
+  }
+  .honesty-block {
+    background: var(--cream);
+    border-left: 3px solid var(--rose-gold);
+    padding: 28px 32px;
+    margin: 40px 0;
+    border-radius: 2px;
+  }
+  .honesty-block p:last-child { margin-bottom: 0; }
+  .offer-block {
+    margin-top: 64px;
+    padding: 48px 40px;
+    background: var(--cream);
+    border-radius: 4px;
+    border: 1px solid var(--rose-gold-soft);
+  }
+  .offer-block h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+  .offer-block .tagline {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--muted);
+    margin-bottom: 36px;
+  }
+  .day { margin: 28px 0; }
+  .day-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--rose-gold);
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+  .day-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--navy);
+    margin-bottom: 12px;
+  }
+  .investment {
+    text-align: center;
+    margin: 40px 0 24px;
+  }
+  .investment .amount {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 34px;
+    color: var(--navy);
+    font-weight: 500;
+  }
+  .investment .amount-detail {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+  .signoff {
+    margin-top: 64px;
+    text-align: center;
+  }
+  .signoff .closing {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 22px;
+    color: var(--navy);
+    margin-bottom: 24px;
+    line-height: 1.45;
+  }
+  .signoff .names {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color: var(--rose-gold);
+    letter-spacing: 0.02em;
+    margin-top: 32px;
+  }
+  @media (max-width: 600px) {
+    .page { padding: 64px 28px 80px; }
+    .header h1 { font-size: 32px; }
+    .pullquote { font-size: 20px; padding: 28px 16px; }
+    .offer-block { padding: 32px 22px; }
+  }
+  @media print {
+    body { background: white; }
+    .page { box-shadow: none; max-width: none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="eyebrow">For Joanne, Marie &amp; The Thompson Method Team</div>
+    <h1>A letter from <em>Kelly &amp; Alicia</em></h1>
+    <p class="subtitle">Some thoughts, some honesty, and one invitation - whenever you're ready.</p>
+  </div>
+
+  <p class="salutation">Joanne and Marie,</p>
+
+  <p>Alicia and I have sat with everything you shared with us across both calls on Monday. What you've built has stayed with both of us, and we wanted to come back to you with something honest rather than something polished. So this is a letter, not a pitch deck. A bit of advice. A bit of honesty. And one invitation if you'd like it.</p>
+
+  <hr class="divider">
+
+  <h2>What we've been sitting with</h2>
+
+  <p>Robyn's ten-year body of teaching. The eighteen months you and Marie have spent carrying it forward since she passed. A proven body of work that has reached hundreds of thousands of mothers. A community that loves you the way they love family. A daughter and a business partner carrying a promise through grief and rebuild.</p>
+
+  <p>You said you wanted to surround yourself with the right women for the rest of your life. You said build it for your team to run. You said <em>go slow, come back with small wins</em>. We heard all of it.</p>
+
+  <h2>The one thing we keep coming back to</h2>
+
+  <p>Breastfeeding isn't like skincare, or coaching, or the kind of work we do. It's a sacred chapter, not a lifelong consumable. Most of the mothers in your database have already walked through that chapter. They love you, they remember Robyn, they open every email because that's where their child's first weeks live. But they're not buyers anymore.</p>
+
+  <div class="pullquote">
+    They are not your audience.<br>
+    They are your alumni.
+  </div>
+
+  <p>And we think that changes what the database actually <em>is</em>. Honestly, it might be more beautiful, not less. Alumni are the most powerful referral engine on the planet, when you make it generous and easy for them to pass it forward.</p>
+
+  <p>That is where the growth lives. Not in trying to convince a pregnant woman who doesn't yet know she needs you. It lives in the mother who walked the journey with you, who now has a sister, a friend, a daughter, a niece coming through the same season. Mother to mother. It is how every meaningful birth and motherhood community has ever grown.</p>
+
+  <p>And Robyn's work stays exactly where it should stay. At the heart of it. The soul of the brand. The thread that holds everyone together. Not the price tag.</p>
+
+  <hr class="divider">
+
+  <h2>Now the honest bit</h2>
+
+  <div class="honesty-block">
+    <p>We don't think you should be working with any agency right now. Including us.</p>
+    <p>You've already poured eighteen months and a lot of money into agencies trying to fix a problem that wasn't fixable through ad optimisation. Adding another monthly fee to your overheads would be the seventh version of the same mistake. The most respectful thing we can do is say so out loud.</p>
+    <p>Whatever you decide from here, do not sign another retainer.</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- THE ONE INVITATION -->
+  <div class="offer-block">
+
+    <h2>The one thing we'd love to offer</h2>
+    <p class="tagline">Two days. Strategy reset and systems install. Then we step back.</p>
+
+    <p>A two-day VIP intensive on the Sunshine Coast. You, Marie, and your team in the same room with Alicia and me. Laptops open, the business in front of us, and a clear plan to walk out with the right strategy in place and the systems installed for the team to drive without us.</p>
+
+    <div class="day">
+      <div class="day-label">Day One</div>
+      <div class="day-title">Strategy reset</div>
+      <p>We sit with the big questions until you have answers in your own language. What does the mother-to-mother referral mechanic look like? What is My Milk Map's role as the gift product, the one a graduate passes to her sister or daughter? How do we keep Robyn's wisdom at the heart of the community without monetising it? What does the next 90 days look like when the focus is referral, not cold acquisition?</p>
+    </div>
+
+    <div class="day">
+      <div class="day-label">Day Two</div>
+      <div class="day-title">Systems install</div>
+      <p>Hands on your team's keyboards. We install the referral flow in Klaviyo. The My Milk Map founding-member pre-launch sequence. The video repurposing engine so Robyn's archive flows through Vista to all six platforms automatically. The content approval cadence so your team can run it day to day without involving you. Everything tested live before we leave.</p>
+    </div>
+
+    <h3>What you walk out owning</h3>
+    <ul>
+      <li>A one-page strategic plan built around alumni and referral, not cold acquisition</li>
+      <li>The referral mechanic designed, scripted, and installed in Klaviyo</li>
+      <li>My Milk Map founding-member pre-launch sequence ready to go</li>
+      <li>Video repurposing engine installed and posting to Vista</li>
+      <li>Klaviyo database segmentation and the warm community nurture flows</li>
+      <li>Your team trained, briefed, and running the lot</li>
+      <li>A clear ad architecture for the sanitised account when you decide to switch it on</li>
+    </ul>
+
+    <h3>What happens after</h3>
+    <p>Nothing. No retainer. No monthly fees. No agency dependency. Your laptop, your team, your call. If something specific breaks later, or you want us back for a particular project once you're stable, you call us and we quote on the project. No lock-in, no ongoing burn.</p>
+
+    <div class="investment">
+      <div class="amount">$5,000 + GST</div>
+      <div class="amount-detail">Both days. Both of us. All systems installed and tested.</div>
+    </div>
+
+    <p>That's what this is. That's the whole offer. We're not pitching ongoing work because we don't think ongoing work is what you need.</p>
+
+  </div>
+
+  <hr class="divider">
+
+  <h2>And it's completely okay to say no</h2>
+
+  <p>If the workshop isn't right, or the timing isn't right, or you'd rather take what's above and run with it yourselves, that's a beautiful answer too. The advice in this letter is yours either way. Nothing changes between us. We are still in your corner.</p>
+
+  <div class="signoff">
+    <p class="closing">You said you wanted to surround yourself with the right women for the rest of your life.<br>We would be honoured to be two of them, in whatever form makes sense for you.</p>
+    <p class="closing"><em>With love, no rush, no pressure.</em></p>
+    <div class="names">Kelly &amp; Alicia</div>
+  </div>
+
+</div>
+</body>
+</html>
